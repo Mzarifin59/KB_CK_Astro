@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header{
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+
+.bg-custom-blue {
+    background-color:rgb(19, 106, 173);
+}
+
+.text-custom-gray {
+    color: #1e293b;
+}
+
+.bg-footer-gray{
+    background-color: #f7f8f8;
+}
+
+.mtfoot{
+  margin-top:20rem;
+}
+
+
+/* Accordion */
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb; /* Garis pemisah */
+  margin-bottom: 10px;
+}
+
+.accordion-trigger {
+  background-color: transparent;
+  border: none;
+  color: #1f2937; /* Warna teks */
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 0;
+  animation: fadeIn 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+
+
+  

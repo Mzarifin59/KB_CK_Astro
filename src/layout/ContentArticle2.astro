@@ -1,0 +1,24 @@
+---
+import '../style/globals.css';
+import '@/style/homepage.css';
+import '../style/contenarticle2.css';
+import Header from "@/components/Header";
+import ContenArticle3 from "@/components/article2/ContentArticle3";
+import ContentArticle4 from "@/components/article2/ContentArticle4";
+import Footer from '@/components/footer';
+---
+<!-- <div class="full-konten"> -->
+<Header client:load />
+<div class="container2 mt-12">
+    <div class="article1">
+        <ContenArticle3 client:load />
+    </div>
+    <div class="article2">
+      <ContentArticle4 client:load></ContentArticle4>
+    </div>
+</div>
+ <script src="/js/toc.js" type="module"></script>  
+
+<Footer></Footer>
+<!-- </div> -->
+  

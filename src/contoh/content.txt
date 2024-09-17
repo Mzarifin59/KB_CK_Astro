@@ -1,0 +1,293 @@
+import React from 'react';
+
+//import shdacnUI
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card.tsx"
+
+
+const Content = () => {
+    return (
+        <div>
+            {/* Informasi Umum*/}
+            <div className='grid grid-cols-3 gap-4 p-4 items-center'>
+                <Card>
+                    <CardHeader>
+                        <div className="flex items-center mb-4">
+                            <img src="/folder.png" alt="" width={"35px"} />
+                            <CardTitle className='text-blue-500 ml-4'>
+                                <a href="/index2">Informasi Umum</a>
+                            </CardTitle>
+                            <div className="ml-auto bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">
+                                <h1 className='text-2xl'>3</h1>
+                            </div>
+                        </div>
+                        <hr className="h-1 bg-blue-500" />
+                    </CardHeader>
+
+                    <CardContent>
+                        <div className="text-custom-gray space-y-7 mt-2">
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara Upload File ke Layanan Kilat Hosting 2.0 melalui FTP</a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara Mengaktifkan Two-Factor Authentication (2FA) di Portal Client CloudKilat</a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Coba</a>
+                            </div>
+                            <div className="mt-16">
+                                <button className="px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+
+                    </CardContent>
+
+                </Card>
+            </div>
+
+
+            {/* Aplikasi */}
+            <div className='grid grid-cols-3 gap-4 p-4 items-center'>
+                <Card>
+                    <CardHeader>
+                        <div className="flex items-center mb-4">
+                            <img src="/folder.png" alt="" width={"35px"} />
+                            <CardTitle className='text-blue-500 ml-4'>
+                                <a href="">Aplikasi</a>
+
+                            </CardTitle>
+                            <div className="ml-auto bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">
+                                <h1 className='text-2xl'>3</h1>
+                            </div>
+
+                        </div>
+                        <hr className="h-1 bg-blue-500" />
+                    </CardHeader>
+
+                    <CardContent>
+                        <div className="text-custom-gray space-y-7 mt-2">
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara Instalasi Grav CMS di AlmaLinux 8</a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Instalasi NextCloud di Kilat Hosting 2.0 </a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Instalasi SSL Let’s Encrypt di Kilat Hosting 2.0 </a>
+                            </div>
+                            <div className="mt-16">
+                                <button className="px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+
+
+            {/* Konfigurasi*/}
+            <div className='grid grid-cols-3 gap-4 p-4 items-center'>
+                <Card>
+                    <CardHeader>
+                        <div className="flex items-center mb-4">
+                            <img src="/folder.png" alt="" width={"35px"} />
+                            <CardTitle className='text-blue-500 ml-4'>
+                                <a href="">Konfigurasi</a>
+                            </CardTitle>
+                            <div className="ml-auto bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">
+                                <h1 className='text-2xl'>4</h1>
+                            </div>
+
+                        </div>
+                        <hr className="h-1 bg-blue-500" />
+                    </CardHeader>
+
+                    <CardContent>
+                        <div className="text-custom-gray space-y-7 mt-2">
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Upgrade OS CentOS 7 ke AlmaLinux 8 pada VPS cPanel</a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara Mengatur DNS Record dan Proxy di Cloudflare </a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara akses Kilat Storage menggunakan S3 Browser  </a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara Mengimport/Upload Database di Layanan Kilat Hosting 2.0   </a>
+                            </div>
+                            <div className="mt-16">
+                                <button className="px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+
+            {/* Keamanan*/}
+            <div className='grid grid-cols-3 gap-4 p-4 items-center'>
+                <Card>
+                    <CardHeader>
+                        <div className="flex items-center mb-4">
+                            <img src="/folder.png" alt="" width={"35px"} />
+                            <CardTitle className='text-blue-500 ml-4'>
+                                <a href="">Keamanan</a>
+                            </CardTitle>
+                            <div className="ml-auto bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">
+                                <h1 className='text-2xl'>2</h1>
+                            </div>
+
+                        </div>
+                        <hr className="h-1 bg-blue-500" />
+                    </CardHeader>
+
+                    <CardContent>
+                        <div className="text-custom-gray space-y-7 mt-2">
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">​Cara Instalasi SSL di Web Server Apache </a>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Cara Mengatur DNS Record dan Proxy di Cloudflare [REVIEW] </a>
+                            </div>
+                            <div className="mt-16">
+                                <button className="px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+
+            {/* Jaringan*/}
+            <div className='grid grid-cols-3 gap-4 p-4 items-center'>
+                <Card>
+                    <CardHeader>
+                        <div className="flex items-center mb-4">
+                            <img src="/folder.png" alt="" width={"35px"} />
+                            <CardTitle className='text-blue-500 ml-4'>
+                                <a href="">Jaringan</a>
+                            </CardTitle>
+                            <div className="ml-auto bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">
+                                <h1 className='text-2xl'>1</h1>
+                            </div>
+
+                        </div>
+                        <hr className="h-1 bg-blue-500" />
+                    </CardHeader>
+
+                    <CardContent>
+                        <div className="text-custom-gray space-y-7 mt-2">
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">5 Plugins WordPress Terbaik untuk SEO </a>
+                            </div>
+                            <div className="mt-16">
+                                <button className="px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+
+            {/* Kilat Vm*/}
+            <div className='grid grid-cols-3 gap-4 p-4 items-center'>
+                <Card>
+                    <CardHeader>
+                        <div className="flex items-center mb-4">
+                            <img src="/folder.png" alt="" width={"35px"} />
+                            <CardTitle className='text-blue-500 ml-4'>
+                                <a href="">Kilat VM</a>
+                            </CardTitle>
+                            <div className="ml-auto bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">
+                                <h1 className='text-2xl'>4</h1>
+                            </div>
+
+                        </div>
+                        <hr className="h-1 bg-blue-500" />
+                    </CardHeader>
+
+                    <CardContent>
+                        <div className="text-custom-gray space-y-7 mt-2">
+                            <div className="flex items-center space-x-2">
+                                <img src="/mini-logo.png" alt="" width={"15px"} />
+                                <a href="">Instalasi Agent layanan Kilat Protect pada OS Debian 11</a>
+                            </div>
+
+                            {/* //Troubleshooting */}
+                            <div class="accordion">
+
+                                <div class="accordion-item">
+                                    <button class="accordion-trigger">Troubleshooting</button>
+                                    <div class="accordion-content">
+                                        <div class="flex items-center space-x-2">
+                                            <img src="/mini-logo.png" alt="" width="15px" />
+                                            <a href="">Cara Melakukan Ping dan Traceroute di Linux</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="accordion">
+
+                                <div class="accordion-item">
+                                    <button class="accordion-trigger">Aplikasi</button>
+                                    <div class="accordion-content">
+                                        <div class="flex items-center space-x-2">
+                                            <img src="/mini-logo.png" alt="" width="15px" />
+                                            <a href="">Cara Melakukan Ping dan Traceroute di Linux</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div className="mt-16">
+                                <button className="px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </CardContent>
+
+
+                </Card>
+            </div>
+
+
+        </div>
+    );
+};
+
+export default Content;
+
+

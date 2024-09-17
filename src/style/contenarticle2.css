@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html {
+    background-color: #e6e9ec;
+}
+    
+
+.bg-custom-blue {
+    background-color:rgb(19, 106, 173);
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-start;
+  
+}
+
+.article1{ 
+    width: 335px;
+    max-width: 450px;
+}
+
+
+.article2{
+  width: 120vh;
+    max-width: 120vh;
+}
+
+
+/* scrol */
+.article1 {
+    position: sticky;
+    top: 0;
+}
+.article2 {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+
+ol {
+    list-style-type: disc;
+ }
+
+  
+.txt-color{
+    color:rgb(86, 110, 139);
+}
+
+.txt-title{
+   color: rgb(63, 88, 118);
+}
+
+
+/* toc */
+.toc-list {
+    position: relative;
+    padding-left: 20px; /* Sesuaikan dengan kebutuhan */
+}
+
+.toc-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Lebar garis */
+    background-color: #cecece; /* Warna garis */
+    transition: background-color 0.3s;
+}
+
+.toc-link.active::before {
+    background-color: blue; /* Warna garis saat aktif */
+}
+
+
+
+
+
