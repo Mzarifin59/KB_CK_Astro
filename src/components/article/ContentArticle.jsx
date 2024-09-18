@@ -8,10 +8,10 @@ import {
 
 const AccordionSection = ({ title, items, count }) => (
     <AccordionItem value={title.toLowerCase().replace(' ', '-')}>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between card-container items-center">
             <div className="flex items-center space-x-4">
                 <img src="/folder.png" alt="Folder Icon" width="25" />
-                <AccordionTrigger className="txt-color text-lg font-semibold">{title}</AccordionTrigger>
+                <AccordionTrigger className=" text-lg font-semibold">{title}</AccordionTrigger>
             </div>
             {count && (
                 <div className="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8">
@@ -23,7 +23,7 @@ const AccordionSection = ({ title, items, count }) => (
             {items.map((item, index) => (
                 <div key={index} className="flex items-center">
                     <img src="/mini-logo.png" alt="Mini Logo" width="20" className="mr-2" />
-                    <a href={item.href} className='flex-1 txt-color hover:text-blue-600'>{item.title}</a>
+                    <a href={item.href} className='flex-1  hover:text-blue-600'>{item.title}</a>
                 </div>
             ))}
         </AccordionContent>
@@ -85,7 +85,7 @@ const Information = () => {
     ];
 
     return (
-        <div className='bg-white p-4 rounded-sm shadow-sm max-w-96 ml-8'>
+        <div className='card-container p-4 rounded-sm shadow-sm max-w-96 ml-8'>
             <Accordion type="single" collapsible>
                 {sections.map((section, index) => (
                     <AccordionSection key={index} {...section} />

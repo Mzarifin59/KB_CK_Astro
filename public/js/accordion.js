@@ -6,12 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
             const parentItem = this.parentElement;
             const isActive = parentItem.classList.contains("active");
 
-            // Tutup semua accordion item
+            // Ini untuk menutup semua accordion item
             document.querySelectorAll(".accordion-item").forEach(item => {
                 item.classList.remove("active");
             });
 
-            // Jika item yang diklik tidak aktif, buka accordion item tersebut
             if (!isActive) {
                 parentItem.classList.add("active");
             }

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
     Card,
     CardContent,
@@ -8,7 +7,7 @@ import {
 } from "@/components/ui/card";
 
 const InfoCard = ({ title, count, links, href }) => (
-    <Card className="h-full">
+    <Card className="mt-2 card-container">
         <CardHeader>
             <div className="flex items-center mb-4">
                 <img src="/folder.png" alt="" className="w-8 h-8" />
@@ -23,14 +22,14 @@ const InfoCard = ({ title, count, links, href }) => (
         </CardHeader>
 
         <CardContent>
-            <div className="text-custom-gray space-y-4 md:space-y-7 mt-2">
+            <div className="text-custom-gray space-y-4 md:space-y-5 mt-2">
                 {links.map((link, index) => (
                     <div key={index} className="flex items-center space-x-2">
                         <img src="/mini-logo.png" alt="" className="w-4 h-4" />
                         <a href={link.href} className="text-sm md:text-base">{link.label}</a>
                     </div>
                 ))}
-                <div className="mt-8 md:mt-16">
+                <div className="mt-4 md:mt-8">
                     <button className="w-full md:w-auto px-4 py-2 text-blue-500 border border-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-500 hover:text-white text-sm md:text-base">
                         Explore More
                     </button>
@@ -55,7 +54,7 @@ const Content = () => {
         {
             title: "Aplikasi",
             count: 3,
-            href: "/aplikasi",
+            href: "/index2",
             links: [
                 { label: "Cara Instalasi Grav CMS di AlmaLinux 8", href: "/grav-install" },
                 { label: "Instalasi NextCloud di Kilat Hosting 2.0", href: "/nextcloud-install" },
@@ -100,8 +99,9 @@ const Content = () => {
             ],
         },
     ];
+
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-16">
             {cardData.map((card, index) => (
                 <InfoCard
                     key={index}

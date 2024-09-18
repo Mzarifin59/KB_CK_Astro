@@ -3,9 +3,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight } from "lucide-react";
 
 const ContentArticle4 = () => {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
     return (
         <div className="">
-            <nav className="flex items-center text-1xl font-family text-gray-500 mb-4">
+            <nav className="flex items-center text-1xl font-family mb-4">
                 <a href="/">Home</a>
                 <ChevronRight className="w-4 h-4 mx-1" />
                 <a href="/index2">Docs</a>
@@ -15,10 +21,45 @@ const ContentArticle4 = () => {
                 <span className="text-blue-600">Cara Upload File ke Layanan Kilat Hosting 2.0 melalui FTP</span>
             </nav>
 
-            <div className="relative">
-                <Card className="mx-auto max-w-[50rem] mt-9">
+            <div className="toc-sticky ">
+               <div className="absolute top-0 right-0 md:-right-56 md:w-48 mt-8">
+                    <div>
+                        <h2 className="font-bold text-lg mb-3 txt-color">Table of Contents</h2>
+                        <ul className="toc-list space-y-4 text-sm">
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection("section1")}
+                                    className=" hover:text-blue-600"
+                                >
+                                  1. Persyaratan Umum
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection("section2")}
+                                    className=" hover:text-blue-600"
+                                >
+                                2. Langkah 1: Akses FTP Layanan Kilat Hosting 2.0
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection("section3")}
+                                    className=" hover:text-blue-600"
+                                >
+                                3. Langkah 2: Unggah File Layanan Kilat Hosting 2.0
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+
+            <div className="relative ">
+                <Card className="mx-auto max-w-[50rem] card-container">
                     <CardHeader>
-                        <CardTitle className="text-4xl mb-10 txt-title tracking-tight leading-normal">
+                        <CardTitle className="text-4xl mb-10  tracking-tight leading-normal">
                             Cara Upload File ke Layanan Kilat Hosting 2.0 melalui FTP
                         </CardTitle>
 
@@ -26,7 +67,7 @@ const ContentArticle4 = () => {
                             1 min read
                         </div>
                     </CardHeader>
-                    <CardContent className="txt-title">
+                    <CardContent className="">
                         <div className="space-y-5">
                             <p>Halo, Sobat CloudKilat! Apakah Anda memiliki website baru dan ingin mengunggahnya ke layanan Kilat Hosting 2.0? Atau mungkin Anda ingin memperbarui konten website yang sudah ada? Knowledge Base inilah jawabannya!</p>
                             <p>Pada panduan ini, kami akan menjelaskan langkah demi langkah agar Anda dapat dengan mudah mengunggah file, arsip, atau data-data website dari komputer Anda ke layanan Kilat Hosting 2.0 dengan menggunakan FTP (File Transfer Protocol).</p>
@@ -93,17 +134,11 @@ const ContentArticle4 = () => {
                     </CardContent>
                 </Card>
 
-                <div className="absolute top-0 right-0 md:-right-56 md:w-48">
-                    <div>
-                        <h2 className="font-bold text-lg mb-3 txt-color">Table of Contents</h2>
-                        <ul className="toc-list space-y-2 text-sm">
-                            <li><a href="#section1" className="txt-title hover:text-blue-600">1. Persyaratan Umum</a></li>
-                            <li><a href="#section2" className="txt-title hover:text-blue-600">2. Langkah 1: Akses FTP pada Layanan Kilat Hosting 2.0</a></li>
-                            <li><a href="#section3" className="txt-title hover:text-blue-600">3. Langkah 2: Unggah File ke Layanan Kilat Hosting 2.0</a></li>
-                        </ul>
-                    </div>
-                </div>
+                {/* Tabel Of Contents */}
+
             </div>
+
+           
         </div>
     );
 };

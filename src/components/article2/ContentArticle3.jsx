@@ -9,11 +9,10 @@ import {
 const ContentArticle3 = () => {
     return (
         <div >
-            
-                <div className= 'bg-white p-2 rounded-sm shadow-lg max-w-[19rem] mt-20'>
+                <div className= ' p-2 rounded-sm shadow-lg max-w-[19rem] mt-8'>
             <Accordion type="single" collapsible className='ml-4'>
                 <AccordionItem value="item-1">
-                    <AccordionTrigger className='txt-color'>Informasi Umum</AccordionTrigger>
+                    <AccordionTrigger>Informasi Umum</AccordionTrigger>
                     <AccordionContent className='space-y-6'>
                         <div className="flex items-center ">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -39,7 +38,7 @@ const ContentArticle3 = () => {
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                    <AccordionTrigger className='txt-color'>Aplikasi</AccordionTrigger>
+                    <AccordionTrigger>Aplikasi</AccordionTrigger>
                     <AccordionContent className='space-y-6'>
                         <div className="flex items-center">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -64,7 +63,7 @@ const ContentArticle3 = () => {
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                    <AccordionTrigger  className='txt-color'>Konfigurasi</AccordionTrigger>
+                    <AccordionTrigger >Konfigurasi</AccordionTrigger>
                     <AccordionContent className='space-y-6'>
                         <div className="flex items-center">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -94,7 +93,7 @@ const ContentArticle3 = () => {
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                    <AccordionTrigger  className='txt-color'>Jaringan</AccordionTrigger>
+                    <AccordionTrigger >Jaringan</AccordionTrigger>
                     <AccordionContent className='space-y-6'>
                         <div className="flex items-center">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -105,7 +104,7 @@ const ContentArticle3 = () => {
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                    <AccordionTrigger  className='txt-color'>Keamanan</AccordionTrigger>
+                    <AccordionTrigger >Keamanan</AccordionTrigger>
                     <AccordionContent className='space-y-6'>
                         <div className="flex items-center">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -122,7 +121,7 @@ const ContentArticle3 = () => {
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
-                    <AccordionTrigger  className='txt-color'>Kilat VM</AccordionTrigger>
+                    <AccordionTrigger >Kilat VM</AccordionTrigger>
                     <AccordionContent>
                         <div className="flex items-center">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -133,7 +132,7 @@ const ContentArticle3 = () => {
                         <div className='mt-2'>
                             <Accordion type='single' collapsible>
                                 <AccordionItem value="sub-item-1">
-                                    <AccordionTrigger  className='txt-color'>Troubleshooting</AccordionTrigger>
+                                    <AccordionTrigger >Troubleshooting</AccordionTrigger>
                                     <AccordionContent>
                                         <div className="flex items-center">
                                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -149,7 +148,7 @@ const ContentArticle3 = () => {
 
                             <Accordion type='single' collapsible>
                                 <AccordionItem value="sub-item-2">
-                                    <AccordionTrigger  className='txt-color'>Aplikasi</AccordionTrigger>
+                                    <AccordionTrigger >Aplikasi</AccordionTrigger>
                                     <AccordionContent>
                                         <div className="flex items-center">
                                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
@@ -159,11 +158,11 @@ const ContentArticle3 = () => {
                                         </div>
                                         <Accordion type='single' collapsible>
                                             <AccordionItem value="sub-sub-item-1">
-                                                <AccordionTrigger  className='txt-color'>Control Panel</AccordionTrigger>
+                                                <AccordionTrigger >Control Panel</AccordionTrigger>
                                                 <AccordionContent>
                                                     <Accordion type="single" collapsible>
                                                         <AccordionItem value="sub-sub-item-2">
-                                                            <AccordionTrigger  className='txt-color'>Anak Control Panel</AccordionTrigger>
+                                                            <AccordionTrigger >Anak Control Panel</AccordionTrigger>
                                                             <AccordionContent>
                                                                 <div className="flex items-center">
                                                                     <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />

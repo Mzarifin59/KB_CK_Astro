@@ -20,13 +20,6 @@ body {
     background-color:rgb(19, 106, 173);
 }
 
-.text-custom-gray {
-    color: #1e293b;
-}
-
-.bg-footer-gray{
-    background-color: #f7f8f8;
-}
 
 .mtfoot{
   margin-top:20rem;
@@ -34,19 +27,19 @@ body {
 
 
 /* Accordion */
-.accordion {
+/* .accordion {
   width: 100%;
 }
 
 .accordion-item {
-  border-bottom: 1px solid #e5e7eb; /* Garis pemisah */
+  border-bottom: 1px solid #e5e7eb; 
   margin-bottom: 10px;
 }
 
 .accordion-trigger {
   background-color: transparent;
   border: none;
-  color: #1f2937; /* Warna teks */
+  color: #1f2937; 
   font-size: 1.1rem;
   cursor: pointer;
   padding: 10px 0;
@@ -76,6 +69,4 @@ body {
 
 
 
-
-
-  
+   */

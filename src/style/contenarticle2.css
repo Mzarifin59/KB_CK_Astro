@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body,html {
+body {
     background-color: #e6e9ec;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
     
 
 .bg-custom-blue {
@@ -19,13 +24,12 @@ body,html {
 
 .article1{ 
     width: 335px;
-    max-width: 450px;
+ 
 }
 
 
 .article2{
   width: 120vh;
-    max-width: 120vh;
 }
 
 
@@ -34,11 +38,14 @@ body,html {
     position: sticky;
     top: 0;
 }
-.article2 {
+
+.toc-sticky {
     position: sticky;
     top: 0;
-    padding: 20px;
+
 }
+
+
 
 
 ol {
@@ -55,11 +62,16 @@ ol {
 }
 
 
-/* toc */
+
+
+/* sticky-toc */
+
 .toc-list {
     position: relative;
-    padding-left: 20px; /* Sesuaikan dengan kebutuhan */
+    padding-left: 10px;
+    gap: 15px;
 }
+
 
 .toc-list::before {
     content: '';
@@ -67,14 +79,11 @@ ol {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 2px; /* Lebar garis */
-    background-color: #cecece; /* Warna garis */
-    transition: background-color 0.3s;
+    width: 2px; 
+    background-color: #cecece; 
+    transition: background-color 0.3s ease;
 }
 
-.toc-link.active::before {
-    background-color: blue; /* Warna garis saat aktif */
-}
 
 
 
