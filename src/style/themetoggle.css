@@ -45,6 +45,7 @@
   background-color: var(--footer-bg-color);
   color : var(--footer-font-color);
   border: 1px solid var(--footer-border-color);
+  
 }
 
 .header-container {

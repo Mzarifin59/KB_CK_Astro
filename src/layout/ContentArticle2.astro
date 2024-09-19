@@ -5,11 +5,12 @@ import '../style/contenarticle2.css';
 import '../style/themetoggle.css';
 import Header from "@/components/Header";
 import ContenArticle3 from "@/components/article2/ContentArticle3";
-import ContentArticle4 from "@/components/article2/ContentArticle4";
-import Footer from '@/components/footer';
+import ContentArticle4 from '../components/article2/ContentArticle4';
 import ScrollToTopButton from '@/components/fitur/ScrollTopButton';
 import ThemeToggle from '@/components/fitur/ThemeToggle';
+import Footer from '@/components/footer';
 
+const { id, article } = Astro.props;
 ---
 <!-- <div class="full-konten"> -->
 <Header client:load />
@@ -18,7 +19,7 @@ import ThemeToggle from '@/components/fitur/ThemeToggle';
         <ContenArticle3 client:load />
     </div>
     <div class="article2">
-      <ContentArticle4 client:load></ContentArticle4>
+      <ContentArticle4 client:load id={id}>
     </div>
 </div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import {
     Accordion,
     AccordionContent,
@@ -7,6 +7,30 @@ import {
 } from "@/components/ui/accordion2";
 
 const ContentArticle3 = () => {
+    const [data, setData] = useState([]);
+      const [currentIndex, setCurrentIndex] = useState(0);
+  
+      useEffect(() => {
+          const fetchData = async () => {
+            try {
+              const response = await fetch(
+                "https://int-rifky.awan.id/api/articles?populate=*"
+              );
+              if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const result = await response.json();
+              setData(result.data);
+            } catch (err) {
+              console.error("Fetching error:", err);
+            }
+          };
+          fetchData();
+  
+        }, []);
+  
+        const id = data[0]?.id;
+        const id2 = data[1]?.id;
     return (
         <div >
                 <div className= ' p-2 rounded-sm shadow-lg max-w-[19rem] mt-8'>
@@ -16,14 +40,14 @@ const ContentArticle3 = () => {
                     <AccordionContent className='space-y-6'>
                         <div className="flex items-center ">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
-                            <a href="/index3" className='flex-1 txt-color hover:text-blue-600'>
+                            <a href={`/articles/${id}`} className='flex-1 txt-color hover:text-blue-600'>
                                 Cara Upload File ke Layanan Kilat Hosting 2.0 melalui FTP</a>
 
                         </div>
 
                         <div className="flex items-center">
                             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
-                            <a href="" className='flex-1 txt-color hover:text-blue-600'>
+                            <a href={`/articles/${id2}`} className='flex-1 txt-color hover:text-blue-600'>
                                 Cara Mengaktifkan Two-Factor Authentication (2FA) di Portal Client CloudKilat</a>
 
                         </div>
