@@ -50,6 +50,33 @@ const ContentArticle4 = ({id}) => {
           Cara Upload File ke Layanan Kilat Hosting 2.0 melalui FTP
         </span>
       </nav>
+      
+      <div className="toc-sticky">
+      <div className=" absolute top-0 right-0 md:-right-56 md:w-48 mt-8">
+          <div>
+            <h2 className="font-bold text-lg mb-3 txt-color">
+              Table of Contents
+            </h2>
+            <ul className="toc-list space-y-2 text-sm">
+              <li>
+                <a href="#section1" className="txt-title hover:text-blue-600">
+                  1. Persyaratan Umum
+                </a>
+              </li>
+              <li>
+                <a href="#section2" className="txt-title hover:text-blue-600">
+                  2. Langkah 1: Akses FTP pada Layanan Kilat Hosting 2.0
+                </a>
+              </li>
+              <li>
+                <a href="#section3" className="txt-title hover:text-blue-600">
+                  3. Langkah 2: Unggah File ke Layanan Kilat Hosting 2.0
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
 
       <div className="relative">
         <Card className="mx-auto max-w-[50rem] mt-9">
@@ -95,30 +122,7 @@ const ContentArticle4 = ({id}) => {
           </CardContent>
         </Card>
 
-        <div className="absolute top-0 right-0 md:-right-56 md:w-48">
-          <div>
-            <h2 className="font-bold text-lg mb-3 txt-color">
-              Table of Contents
-            </h2>
-            <ul className="toc-list space-y-2 text-sm">
-              <li>
-                <a href="#section1" className="txt-title hover:text-blue-600">
-                  1. Persyaratan Umum
-                </a>
-              </li>
-              <li>
-                <a href="#section2" className="txt-title hover:text-blue-600">
-                  2. Langkah 1: Akses FTP pada Layanan Kilat Hosting 2.0
-                </a>
-              </li>
-              <li>
-                <a href="#section3" className="txt-title hover:text-blue-600">
-                  3. Langkah 2: Unggah File ke Layanan Kilat Hosting 2.0
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
     return (
     
-        <div>
-          <div className="footer-container bg-footer-gray text-custom-gray py-8 mt-48 border">
+    <div>
+        <div className="footer-container txt-color footer-container bg-footer-gray text-custom-gray py-8 mt-48 border">
             <div className="container mx-auto px-4 mt-12">
                 <div className=" grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
@@ -38,13 +38,13 @@ const Footer = () => {
                      
                     </div>
                 </div>
-                </div>
-                <div className="mt-8 mb-6 flex flex-col items-center justify-center">
+            </div>
+               
+           
+            <div className="mt-8 mb-6 flex flex-col items-center justify-center">
                     <p>Copyright © 2024 Knowledge Base CloudKilat</p>
-                </div>
-           
-           
-        </div>
+                 </div>
+     </div>
         
         
 

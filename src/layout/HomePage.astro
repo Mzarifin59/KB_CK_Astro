@@ -1,9 +1,12 @@
 ---
 import '@/style/globals.css';
 import '@/style/homepage.css';
+import '@/style/themetoggle.css';
 import Header from '@/components/Header';
 import Content from '@/components/content';
 import Footer from '@/components/footer';
+import ScrollToTopButton from '@/components/fitur/ScrollTopButton';
+import ThemeToggle from '@/components/fitur/ThemeToggle';
 
 ---
 <!DOCTYPE html>
@@ -17,6 +20,8 @@ import Footer from '@/components/footer';
     <header><Header client:load></Header></header>
     <Content client:load></Content>
     <Footer client:load></Footer>    
+    <ScrollToTopButton client:load></ScrollToTopButton>
+    <ThemeToggle client:load></ThemeToggle>
     <!-- <script src="/js/accordion.js" type="module"></script>    -->
 </body>
 </html>

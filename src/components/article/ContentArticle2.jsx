@@ -29,9 +29,9 @@ const ContentArticle2 = () => {
       const id2 = data[1]?.id;
 
   return (
-    <Card className="max-w-3xl mx-auto">
+    <Card className="max-w-3xl mx-auto card-container">
       <CardContent className="p-6">
-        <nav className="flex items-center text-sm text-gray-500 mb-4">
+        <nav className="flex items-center text-sm mb-4">
           <a href="/">Home</a>
           <ChevronRight className="w-4 h-4 mx-1" />
           <a href="/index2">Docs</a>
@@ -39,7 +39,7 @@ const ContentArticle2 = () => {
           <span>Informasi Umum</span>
         </nav>
 
-        <h1 className="txt-color text-2xl font-bold mb-4">Informasi Umum</h1>
+        <h1 className=" text-2xl font-bold mb-4">Informasi Umum</h1>
 
         <ul className="space-y-2">
           <li>
@@ -55,7 +55,7 @@ const ContentArticle2 = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="txt-color hover:text-blue-600 flex items-center">
+            <a href="#" className=" hover:text-blue-600 flex items-center">
             <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
               Coba
             </a>
