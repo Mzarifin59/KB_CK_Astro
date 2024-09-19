@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #e6e9ec;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+    
+
+.bg-custom-blue {
+    background-color:rgb(19, 106, 173);
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-start;
+  
+}
+
+.article1{ 
+    width: 335px;
+ 
+}
+
+
+.article2{
+  width: 120vh;
+}
+
+
+/* scrol */
+.article1 {
+    position: sticky;
+    top: 0;
+}
+
+.toc-sticky {
+    position: sticky;
+    top: 0;
+
+}
+
+
+
+
+ol {
+    list-style-type: disc;
+ }
+
+  
+.txt-color{
+    color:rgb(86, 110, 139);
+}
+
+.txt-title{
+   color: rgb(63, 88, 118);
+}
+
+
+
+
+/* sticky-toc */
+
+.toc-list {
+    position: relative;
+    padding-left: 10px;
+    gap: 15px;
+}
+
+
+.toc-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: #cecece; 
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+

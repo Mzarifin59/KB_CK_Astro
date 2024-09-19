@@ -1,0 +1,97 @@
+import React, { useState } from 'react';
+import { ChevronRight, ChevronDown } from 'lucide-react';
+
+const AccordionItem = ({ title, children, isOpen, onToggle, icon }) => (
+  <div className="mb-2">
+    <div 
+      className="flex items-center cursor-pointer" 
+      onClick={onToggle}
+    >
+      {isOpen ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
+      {icon && <img src={icon} alt="" className="w-5 h-5 mr-2" />}
+      <span className="text-blue-600">{title}</span>
+    </div>
+    {isOpen && <div className="ml-5">{children}</div>}
+  </div>
+);
+
+const KilatVMAccordion = () => {
+  const [openItems, setOpenItems] = useState({
+    root: true,
+    troubleshooting: false,
+    aplikasi: false,
+    controlPanel: false,
+    anakControlPanel: false
+  });
+
+  const toggleItem = (item) => {
+    setOpenItems(prev => ({ ...prev, [item]: !prev[item] }));
+  };
+
+  return (
+    <div className="bg-white p-4 rounded shadow-sm w-80">
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center">
+          <img src="/folder-icon.png" alt="Folder" className="w-6 h-6 mr-2" />
+          <span className="text-lg font-semibold text-blue-600">Kilat VM</span>
+        </div>
+        <div className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center">
+          4
+        </div>
+      </div>
+
+      <AccordionItem 
+        title="Instalasi Agent layanan Kilat Protect pada OS Debian 11" 
+        isOpen={openItems.root} 
+        onToggle={() => toggleItem('root')}
+        icon="/document-icon.png"
+      />
+
+      <AccordionItem 
+        title="Troubleshooting" 
+        isOpen={openItems.troubleshooting} 
+        onToggle={() => toggleItem('troubleshooting')}
+      >
+        <AccordionItem 
+          title="Cara Melakukan Ping dan Traceroute di Linux" 
+          isOpen={true} 
+          onToggle={() => {}}
+          icon="/document-icon.png"
+        />
+      </AccordionItem>
+
+      <AccordionItem 
+        title="Aplikasi" 
+        isOpen={openItems.aplikasi} 
+        onToggle={() => toggleItem('aplikasi')}
+      >
+        <AccordionItem 
+          title="Cara Transfer Data ke Kilat VM 2.0 menggunakan WinSCP via SCP dan SFTP" 
+          isOpen={true} 
+          onToggle={() => {}}
+          icon="/document-icon.png"
+        />
+        <AccordionItem 
+          title="Control Panel" 
+          isOpen={openItems.controlPanel} 
+          onToggle={() => toggleItem('controlPanel')}
+        >
+          <AccordionItem 
+            title="Anak Control Panel" 
+            isOpen={openItems.anakControlPanel} 
+            onToggle={() => toggleItem('anakControlPanel')}
+          >
+            <AccordionItem 
+              title="Upgrade OS CentOS 7 ke AlmaLinux 8 pada VPS cPanel" 
+              isOpen={true} 
+              onToggle={() => {}}
+              icon="/document-icon.png"
+            />
+          </AccordionItem>
+        </AccordionItem>
+      </AccordionItem>
+    </div>
+  );
+};
+
+export default KilatVMAccordion;

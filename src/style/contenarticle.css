@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #e6e9ec;
+}
+
+.txt-color{
+    color:rgb(86, 110, 139);
+}
+
+/* .full-konten{
+    background-color: #e6e9ec;
+    height: 810px;
+} */
+
+/* style-content-Article */
+.container1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.item { 
+    width: 500px;
+    max-width: 450px;
+}
+
+
+.item2{
+    width: 120vh;
+    max-width: 120vh;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+
+  
+ 
+  

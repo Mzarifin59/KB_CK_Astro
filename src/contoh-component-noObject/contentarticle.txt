@@ -1,0 +1,188 @@
+import React from 'react';
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
+
+
+
+const Information = () => {
+    return (
+        <div className='bg-white p-4 rounded-sm shadow-sm max-w-96 ml-8'>
+            <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                    <div className="flex justify-between items-center">
+                        <div className="flex items-center space-x-4">
+                            {/* Ikon folder */}
+                            <img src="/folder.png" alt="Folder Icon" width="25px" />
+                            {/* Judul accordion */}
+                            <AccordionTrigger className="txt-color text-lg font-semibold">Informasi Umum</AccordionTrigger>
+                        </div>
+                        {/* Bulatan angka */}
+                        <div className="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8">
+                            3
+                        </div>
+                    </div>
+                    <AccordionContent className='space-y-6 mt-2'>
+                        {/* Isi Accordion */}
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Cara Upload File ke Layanan Kilat Hosting 2.0 melalui FTP</a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Cara Mengaktifkan Two-Factor Authentication (2FA) di Portal Client CloudKilat</a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Coba</a>
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
+
+
+
+
+                <AccordionItem value="item-2">
+                    <div className="flex items-center space-x-4">
+                        {/* Ikon folder */}
+                        <img src="/folder.png" alt="Folder Icon" width="25px" />
+                        {/* Judul accordion */}
+                        <AccordionTrigger className="txt-color text-lg font-semibold">Aplikasi</AccordionTrigger>
+                    </div>
+
+                    <AccordionContent className='space-y-6'>
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Cara Instalasi Grav CMS di AlmaLinux 8    </a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Instalasi NextCloud di Kilat Hosting 2.0</a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Instalasi SSL Let’s Encrypt di Kilat Hosting 2.0 </a>
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3">
+                    <div className="flex items-center">
+                        <div className="flex items-center space-x-4">
+                            {/* Ikon folder */}
+                            <img src="/folder.png" alt="Folder Icon" width="25px" />
+                            {/* Judul accordion */}
+                            <AccordionTrigger className="txt-color text-lg font-semibold">Konfigurasi Umum</AccordionTrigger>
+                        </div>
+                        {/* Bulatan angka */}
+                        <div className="ml-auto flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8">
+                            3
+                        </div>
+                    </div>
+                    <AccordionContent className='space-y-6'>
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Upgrade OS CentOS 7 ke AlmaLinux 8 pada VPS cPanel</a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>
+                                Cara Mengatur DNS Record dan Proxy di Cloudflare</a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Cara akses Kilat Storage menggunakan S3 Browser</a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>
+                                Cara Mengimport/Upload Database di Layanan Kilat Hosting 2.0</a>
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
+
+
+
+
+                <AccordionItem value="item-4">
+                    <div className="flex items-center space-x-4">
+                        {/* Ikon folder */}
+                        <img src="/folder.png" alt="Folder Icon" width="25px" />
+                        {/* Judul accordion */}
+                        <AccordionTrigger className="txt-color text-lg font-semibold">Keamanan</AccordionTrigger>
+                    </div>
+                    <AccordionContent className='space-y-6'>
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>​Cara Instalasi SSL di Web Server Apache </a>
+                        </div>
+
+                        <div className="flex items-center">
+                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Cara Mengatur DNS Record dan Proxy di Cloudflare [REVIEW] </a>
+                        </div>
+
+                    </AccordionContent>
+                </AccordionItem>
+
+
+
+                <AccordionItem value="item-5">
+                    <div className="flex items-center space-x-4">
+                        {/* Ikon folder */}
+                        <img src="/folder.png" alt="Folder Icon" width="25px" />
+                        {/* Judul accordion */}
+                        <AccordionTrigger className="txt-color text-lg font-semibold">Kilat VM</AccordionTrigger>
+                    </div>
+                    <AccordionContent className='space-y-6'>
+                        <div className="space-y-4">
+                            {/* Konten pertama */}
+                            <div className="flex items-center">
+                                <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                                <a href="" className='flex-1 txt-color hover:text-blue-600'>Instalasi Agent layanan Kilat Protect pada OS Debian 11</a>
+                            </div>
+
+                            {/* Control Panel */}
+                            <Accordion type="single" collapsible>
+                                <AccordionItem value="control-panel">
+                                    <AccordionTrigger>Control Panel</AccordionTrigger>
+                                    <AccordionContent className='space-y-4'>
+                                        <div className="space-y-4">
+                                            {/* Anak Panel */}
+                                            <Accordion type="single" collapsible>
+                                                <AccordionItem value="anak-panel">
+                                                    <AccordionTrigger>Anak Panel</AccordionTrigger>
+                                                    <AccordionContent className='space-y-4'>
+                                                        <div className="flex items-center">
+                                                            <img src="/mini-logo.png" alt="Mini Logo" width="20px" className="mr-2" />
+                                                            <a href="" className='flex-1 txt-color hover:text-blue-600'>Instalasi Agent layanan Kilat Protect pada OS Debian 11</a>
+                                                        </div>
+                                                    </AccordionContent>
+                                                </AccordionItem>
+                                            </Accordion>
+                                        </div>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
+
+            </Accordion>
+
+        </div>
+
+    );
+};
+
+export default Information;

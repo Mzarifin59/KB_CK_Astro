@@ -1,0 +1,31 @@
+---
+import '../style/globals.css';
+import '@/style/homepage.css';
+import '../style/contenarticle2.css';
+import '../style/themetoggle.css';
+import Header from "@/components/Header";
+import ContenArticle3 from "@/components/article2/ContentArticle3";
+import ContentArticle4 from '../components/article2/ContentArticle4';
+import ScrollToTopButton from '@/components/fitur/ScrollTopButton';
+import ThemeToggle from '@/components/fitur/ThemeToggle';
+import Footer from '@/components/footer';
+
+const { id, article } = Astro.props;
+---
+<!-- <div class="full-konten"> -->
+<Header client:load />
+<div class="container2 mt-12">
+    <div class="article1">
+        <ContenArticle3 client:load />
+    </div>
+    <div class="article2">
+      <ContentArticle4 client:load id={id}>
+    </div>
+</div>
+
+<Footer></Footer>
+
+<ScrollToTopButton client:load></ScrollToTopButton>
+<ThemeToggle client:load></ThemeToggle>
+<!-- </div> -->
+  

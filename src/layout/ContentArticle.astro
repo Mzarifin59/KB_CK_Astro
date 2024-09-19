@@ -1,0 +1,27 @@
+---
+import '../style/globals.css';
+import '@/style/homepage.css';
+import '../style/contenarticle.css';
+import '../style/themetoggle.css';
+import Header from "@/components/Header";
+import ContenArticle from "@/components/article/ContentArticle";
+import ContentArticle2 from "@/components/article/ContentArticle2"
+import Footer from '@/components/footer';
+import ScrollToTopButton from '@/components/fitur/ScrollTopButton';
+import ThemeToggle from '@/components/fitur/ThemeToggle';
+---
+<!-- <div class="full-konten"> -->
+<Header client:load />
+<div class="container1 mt-10">
+    <div class="item">
+      <ContenArticle client:load />
+    </div>
+    <div class="item2">
+    <ContentArticle2 client:load></ContentArticle2>
+    </div>
+</div>
+<footer><Footer client:load></Footer></footer>
+<ScrollToTopButton client:load></ScrollToTopButton>
+<ThemeToggle client:load></ThemeToggle>
+<!-- </div> -->
+  

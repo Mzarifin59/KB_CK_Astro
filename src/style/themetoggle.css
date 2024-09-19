@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+
+  /* FOOTER-STYLE */
+  --footer-bg-color: #f0f0f0;
+  --footer-font-color : #1e293b ;
+  --footer-border-color: rgb(214, 204, 204);
+
+  /* HEADER-STYLE */
+  --header-bg-color: #ffffff;
+  --header-font-color :#000;
+
+/* CARD-STYLE */
+--card-bg-color: #ffffff;
+  --card-font-color :rgb(86, 110, 139);
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+
+   /* FOOTER-STYLE */
+  --footer-bg-color: #161625; 
+  --footer-font-color :#ffffff;
+  --footer-border-color: rgb(107, 107, 107);
+ 
+  /* HEADER-STYLE */
+  --header-bg-color: #161625;
+  --header-font-color: #fff;
+
+  /* CARD-STYLE */
+  --card-bg-color: #333232;
+  --card-font-color: #fff;
+ 
+}
+
+.footer-container {
+  background-color: var(--footer-bg-color);
+  color : var(--footer-font-color);
+  border: 1px solid var(--footer-border-color);
+  
+}
+
+.header-container {
+  background-color: var(--header-bg-color);
+  color : var(--header-font-color)
+}
+
+.card-container{
+  background-color: var(--card-bg-color);
+  color : var(--card-font-color);
+}
+
+
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+  }
+  
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 50px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: rgb(228, 223, 223);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.4s;
+    border-radius: 12px;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    left: 4px;
+    bottom: 4px;
+
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateY(-50px);
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    transition: opacity 0.4s;
+  }
+  
+  .sun-icon {
+    opacity: 1;
+  }
+  
+  .moon-icon {
+    opacity: 0;
+  }
+  
+  input:checked + .slider .sun-icon {
+    opacity: 0;
+  }
+  
+  input:checked + .slider .moon-icon {
+    opacity: 1;
+  }
+  
